@@ -18,3 +18,10 @@ Route::get('/', [DashboardController::class,"index"]);
 
 Route::get('/form', [BiodataController::class,"daftar"]);
 Route::post('/signup', [BiodataController::class,"register"]);
+Route::get('/data-table', function(){
+    return view('pages.data-table');
+});
+
+Route::get('/table', function(){
+    return view('pages.table');
+});
